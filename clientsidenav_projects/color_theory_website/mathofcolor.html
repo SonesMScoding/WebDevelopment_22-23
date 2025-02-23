@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <title>The Math of Color</title>
+    <meta charset="utf-8">
+    <script src="mathofcolor.js" defer></script>
+</head>
+<body>
+    <header> 
+        <h1>The Math of Color</h1>
+    </header>
+    <nav>
+        <a href="https://sonescoding.github.io/clientsidenav_projects/color_theory_website/whycolormatters.html">Why Color Theory Matters</a> &nbsp; &#9632; &nbsp;
+        <a href="https://sonescoding.github.io/clientsidenav_projects/color_theory_website/introcolor.html">Intro to Color Theory</a> &nbsp; &#9632; &nbsp;
+        <a href="https://sonescoding.github.io/clientsidenav_projects/color_theory_website/colorsymbolism.html">Color Symbolism</a> &nbsp; &#9632; &nbsp;
+        <a href="https://sonescoding.github.io/clientsidenav_projects/color_theory_website/mathofcolor.html">The Math of Colors</a> &nbsp; &#9632; &nbsp;
+        <a href="https://sonescoding.github.io/clientsidenav_projects/color_theory_website/aestheticboard.html">Aesthetic Board</a> &nbsp; &#9632; &nbsp;
+        <a href="https://sonescoding.github.io/clientsidenav_projects/color_theory_website/contactuscolor.html">Contact Us</a> &nbsp; &#9632; &nbsp;
+    </nav>
+
+<main>
+    <h2>Trichromatic Theory</h2>
+    <p>The human retina has 3 cones that absorb color. The trichromatic theory in it's simplest form views color space as three dimensional.</p>
+    <p>It is believed that colors on the color wheel can be measured by how much of each cone in our eye converts light into color. Colors can be measured
+        by their red, green, and blue values. (RGB)
+    </p>
+    <p>For this calcualtion to be represented on a visual key, for right now you might have to look up and research the values of each color's RGB. 
+        The following calculation finds the complimentary color based on your input color.   
+    </p>
+</main>
+
+<label id="label"> Enter your color!</label><br>
+<p>Each value must be between 0-255 to be a valid color according to trichromatic theory</p><br>
+
+<form id="form" method="get" action="mathsim.html" >  
+
+    <label for="NickN">Nickname:</label><br>
+    <input type="text" id="Nickn"name="NickN" required><br>
+
+    <br>
+   
+    <label for="color">What is your favorite color?:</label>
+            <select id="color" required>
+                <option value="0" >Red</option>
+                <option value="1">Blue</option>
+                <option value="2">Green</option>
+            </select>
+
+    <br>
+
+    <label for="r"> Red :</label>
+    <input type="number" id="r" name="r" min="0" max="255" required>
+    <label for="b"> Blue :</label>
+    <input type="number" id="b" name="b" min="0" max="255" required>
+    <label for="g"> Green :</label>
+    <input type="number" id="g" name="g" min="0" max="255" required ><br>
+    
+
+
+    <input type="submit" id="submitButton" value="Submit" />
+</form> 
+
+
+<div id="warningBox"></div>
+
+<br>
+<div id="result"></div>
+<br> 
+
+
+<footer>
+    <a href="https://sonescoding.github.io/index.html">Return to SonesCoding Homepage</a>
+    <p>This link will lead you to a brief explanation on how I used 
+        exceptions for this page.
+        <a href="https://sonescoding.github.io/clientsidenav_projects/color_theory_website/exceptionSummary.html">Exception Summary</a></p>
+
+        <p>This link will lead you to a brief summary on web safety.
+            <a href="https://sonescoding.github.io/clientsidenav_projects/color_theory_website/websafetySummary.html">Web Safety Summary</a></p>
+  </footer> 
+
+</body>
+</html>

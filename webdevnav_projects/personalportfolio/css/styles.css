@@ -1,0 +1,385 @@
+
+/* 	
+	Student Name: Lillian Sones
+	File Name: styles.css
+    Date: 02/10/2023
+*/
+
+/*CSS RESET*/
+
+html, body, header, div, h1, h2, h3, h4, main, a, ul, li, footer, nav, article, aside, section{
+   margin: 0;
+   padding: 0;
+   border: 0;
+}
+
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+body{
+    background-color: #507250;
+}
+
+/*********************************************/
+/* Styles for basic Navigation bar and attributes thereof */
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#302b29;
+}
+
+nav h1{
+    color:#c7bcb9;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+    font-weight: bold;
+    padding: 1.5em;
+}
+
+nav ul{
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+}
+
+nav li{
+    display: flex;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2em;
+}
+
+nav li a{
+    text-decoration: none;
+    color: #c7bcb9;
+    display: block;
+    padding: 2em;
+}
+
+nav li:hover{
+    background-color: #947657;
+    color: #302b29;
+    border:#c7bcb9;
+    border-radius: 40%;
+}
+/*********************************************/
+
+/*********************************************/
+/* Styles for Main */
+main{
+    background:linear-gradient(#302b29, #4b3e38, #507250);
+    font-family: 'Labrada', serif;
+    color: #c7bcb9;
+    height: 100%;
+
+    display: block;
+    text-align: center;
+    align-content: center;
+
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 20%;
+    margin-right: 20%;
+
+}
+
+main p {
+    padding: 2%;
+    font-size: 1.2em;
+}
+
+main ul{
+    list-style-type: square;
+}
+
+/*********************************************/
+
+/*********************************************/
+/*minimal icon styling.*/
+.logo{
+    background-color: transparent;
+    max-width: 15%;
+    padding: 5%;
+}
+/*********************************************/
+
+/*********************************************/
+/* weird lil things that have custom stuff*/
+/* should remain in general relative and compatible*/
+
+
+#portrait{
+    max-width: 40%;
+    padding: 2%;
+    background-color: #c7bcb9;
+
+}
+
+#portrait figcaption{
+    text-align: center;
+    margin: auto;
+    max-width: 80%;
+    color: #193318;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.hgrid{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px 10px;
+}
+
+.hgrid article{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #193318;
+    padding: 2%;
+    text-align: right;
+    margin: 1% 5% 1% 5%;
+}
+
+.favqgrid{
+    display: grid;
+    grid-template-columns: auto auto ;
+    grid-gap: 20px 20px;
+    align-items: center;
+}
+
+.favqgrid section{
+    color:#947657;
+    box-shadow: 5px 5px 5px 5px #292321;
+    background-color: rgb(24, 51, 23, .3);
+    text-align: center;
+    margin: 2% 5% 2% 5%;
+}
+
+/* Style rules for table */
+
+.table{
+    border: 1px solid #795e43;
+    margin: 0 auto 0 auto;
+  }
+  
+  .table caption{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 1%;
+  }
+  
+  th, td{
+    border: 1px solid #193318;
+    padding: 1%;
+  }
+  th{
+    background-color: #507250;
+    color: #193318;
+    font-size: 1.15em;
+  }
+  tr{
+    background-color: #795e43;
+  }
+
+#funfacts li{
+    padding: 2%;
+}
+
+.contact ul{
+    list-style-type: square ;
+    margin: 0% 20%;
+}
+
+.contact a{
+        display: block;
+        padding: 5%;
+        text-align:center;
+
+        font-family:'Courier New', Courier, monospace;
+        color: #e2b88d;
+        text-decoration: dotted underline #193318;
+        font-size: 1em;
+}
+
+.contact h2{
+    display: block;
+    text-align: center;
+    padding: 7.5%;
+    
+}
+/*********************************************/
+
+
+
+/*********************************************/
+/*Media Queries*/
+/*Currently, the desktop query is the default.
+This is what works for me and this website right now.
+
+But there are at least 2 different media queries. */
+
+/*Styles for Mobile*/
+@media(max-width:480px){
+
+        /* Choose Display*/
+        .mobileDisplay{
+            display: block;
+        }
+      
+        .tabletDisplay{
+            display: none;
+        }
+
+        .deskDisplay{
+            display: none;
+        }
+      
+  /* Rules */
+
+    main{
+     margin: 0;
+    }
+
+    main p{
+        margin: 0% 15%
+    }
+
+    .navbar h1{
+        font-size: 1em;
+        padding: .5em .75em 0em
+    }
+
+    .navbar #links{
+        display: none;
+    }
+
+    .navbar a.icon {
+        background:#302b29 ;
+        width: 100%;
+        color: #c7bcb9;
+        display: block;
+        position: absolute;
+        left: 0;
+        padding:2% 2% 1% 1%;
+      }
+
+  nav li {
+    border-top: none;
+    display: inline-block;
+    text-align: center;
+    padding: .2em 3em 0em;
+  }
+
+    nav{
+        max-width: 100%
+    }
+
+    nav li a{
+
+        font-size: .5em;
+    }
+
+    #funfacts{
+        padding: 10% 15%;
+
+    }
+
+    .contact h2{
+        font-size: 1.2em;
+    }
+
+    }
+
+
+
+/* Styles for Tablet  */
+@media screen and (min-width:481px){
+
+        /* Choose Display*/
+        .tabletDisplay{
+        display: block;
+        }
+    
+        .mobileDisplay{
+        display: none;
+        }
+
+        .deskDisplay{
+            display: none;
+        }
+
+        .navbar a.icon {
+            display: none;
+
+          }
+/* Rules */
+
+    nav li {
+      border-top: none;
+      display: inline-block;
+      font-size: 1.25em;
+    }
+    
+    nav li a {
+      padding: 0.5em;
+    }
+
+    #funfacts{
+        padding: 5% 10%;
+    }
+    }
+
+
+
+/* Styles for Desktop  */
+@media screen and (min-width:1015px){
+
+        /* Choose Display*/
+        .deskDisplay{
+          display: block;
+        }
+        
+        .mobileDisplay{
+          display: none;
+        }
+    
+        .tabletDisplay{
+            display: none;
+          }
+          .navbar a.icon {
+            display: none;}
+          
+    
+/* Rules */
+        
+}
+/*********************************************/
+
+
+
+
+/*********************************************/
+/* You made  it to the bottom of the styles */
+/* Basic Footer styles */
+
+footer{
+    padding: 3% 0;
+
+    background-color: #193318;
+    color: #795e43;
+
+    text-align: center;
+    font-size: small;
+}
+
+footer a{
+    color: #e2b88d;
+    text-decoration: none;
+}
+/*********************************************/

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <script src="aestheticboard.js" defer></script>
+
+</head>
+<body>
+    <header> 
+        <h1></h1>
+    </header>
+    <nav>
+        <a href="https://sonescoding.github.io/clientsidenav_projects/color_theory_website/whycolormatters.html">Why Color Theory Matters</a> &nbsp; &#9632; &nbsp;
+        <a href="https://sonescoding.github.io/clientsidenav_projects/color_theory_website/introcolor.html">Intro to Color Theory</a> &nbsp; &#9632; &nbsp;
+        <a href="https://sonescoding.github.io/clientsidenav_projects/color_theory_website/colorsymbolism.html">Color Symbolism</a> &nbsp; &#9632; &nbsp;
+        <a href="https://sonescoding.github.io/clientsidenav_projects/color_theory_website/mathofcolor.html">The Math of Colors</a> &nbsp; &#9632; &nbsp;
+        <a href="https://sonescoding.github.io/clientsidenav_projects/color_theory_website/aestheticboard.html">Aesthetic Board</a> &nbsp; &#9632; &nbsp;
+        <a href="https://sonescoding.github.io/clientsidenav_projects/color_theory_website/contactuscolor.html">Contact Us</a> &nbsp; &#9632; &nbsp;
+    </nav>
+<body>
+<main>
+    <h2>Your Aesthetic Board!</h2>
+    <p>Currently, this page is in the works. The conditional statement in the code includes displaying a
+        picture moodboard of the selected color. Right now, the matching text content is the only part of the conditional
+        content that is displaying. I will be trying to fix this issue shortly.
+    </p>
+
+<!-- temporary style for padding, will make css for entire site one day. -->
+<style>
+label {
+    font-size: 1rem;
+    padding-right: 10px;
+}
+
+select {
+    font-size: 0.9rem;
+    padding: 2px 5px;
+}
+</style>
+<form>
+    <label for="color">Choose a Color:</label>
+<select id="colors" name="colors-select" onchange="background()">
+    <option value="">--Please choose an option--</option>
+  <option value="red">Red</option>
+  <option value="orange">Orange</option>
+  <option value="yellow">Yellow</option>
+  <option value="green">Green</option>
+  <option value="blue">Blue</option>
+  <option value="purple">Purple</option>
+  <option value="black">Black</option>
+  <option value="gray">Gray</option>
+  <option value="white">White</option>
+</select>
+</form>
+<br>
+    <div id="text"></div>
+    <div id="board"></div>
+</main>
+    <body>
+
+<footer>
+    <a href="https://sonescoding.github.io/index.html">Return to SonesCoding Homepage</a>
+    <p><small>Any questions? Contact me: </p>
+    <p>lillian.sones.27@gmail.com</p>
+    <p>heyoitses@gmail.com</p>
+    <p>(228) 304-7669</small></p>
+  </footer> 
+
+</body>
+</html>
